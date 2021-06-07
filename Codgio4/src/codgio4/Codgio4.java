@@ -789,6 +789,36 @@ public class Codgio4 {
                     case 5: {
 
                         System.out.println("Has seleccionado la opcion 5");
+                        
+                    int[][] m7 = new int[3][3];
+                    
+                    m7[0][0] = 1;
+                    m7[0][1] = 2;
+                    m7[0][2] = 3;
+                    m7[1][0] = 4;
+                    m7[1][1] = 5;
+                    m7[1][2] = 6;
+                    m7[2][0] = 7;
+                    m7[2][1] = 8;
+                    m7[2][2] = 9;
+
+                    int[][] matrizT = new int[m7[0].length][m7.length];
+
+                    for (int i=0; i < m7.length; i++) {
+                        for (int j=0; j < m7[i].length; j++) {
+                            matrizT[j][i] = m7[i][j];
+                        }
+                    }
+
+                    //se imprime la matriz transpuesta en forma no linealizada
+
+                    System.out.println("La matriz transpuesta es: ");
+                    for (int i=0; i < matrizT.length; i++) {
+                        for (int j=0; j < matrizT.length; j++) {
+                            System.out.print("[ "+ matrizT[i][j] + " ]");
+                        }
+                        System.out.println(" ");
+                    }
 
                         break;
                     }
