@@ -84,9 +84,12 @@ public class Codgio4 {
 
         //menu consola para el usuario
         System.out.println("Bienvenido a nuestro humilde programa");
+        System.out.println("");
 
         //------------------------------------------------
+        
         //usuario ingresa ruta del archivo
+        
         System.out.println("Ingrese la ruta del archivo de matrices");
         String rutaarchivo = new Scanner(System.in).nextLine();
         String content = getContentOfFile(rutaarchivo);
@@ -99,7 +102,8 @@ public class Codgio4 {
         nfilas = new int[Lineasdocumento.length];
         ncolumnas = new int[Lineasdocumento.length];
 
-//asignacion de tamaño matriz y nombres
+        //asignacion de tamaño matriz y nombres
+        
         for (int i = 0; i < Lineasdocumento.length; i++) {
 
             String NombreMatriz[] = Lineasdocumento[i].split(":");
@@ -144,13 +148,16 @@ public class Codgio4 {
 
 
         System.out.println("Archivo recibido correctamente!!");
-
-        //------------------------------------------------
-        boolean cerrar = true;
-
-        while (cerrar == true) {
+        System.out.println("");
 
             //------------------------------------------------
+        
+            boolean cerrar = true;
+
+            while (cerrar == true) {
+
+            //------------------------------------------------
+            
             System.out.println("============MENU============");
             System.out.println("1. Sumar Matrices");
             System.out.println("2. Restar Matrices");
@@ -173,7 +180,7 @@ public class Codgio4 {
                 switch (opcion) {
                     case 1:
 
-                        System.out.println("Has seleccionado la opcion 1");
+                        System.out.println("Has seleccionado la opcion 1: Suma de matrices");
                         System.out.println("");
 
                     // sumatoria de dos matrices
@@ -479,10 +486,11 @@ public class Codgio4 {
 
                     int[][] mR = new int[m1.length][m2[0].length];
                     
-                    //proceso de sumatoria de matrices (ya tiene que estar anidado con la lectura de cada matriz)                    
+                    //proceso de sumatoria de matrices (ya tiene que estar anidado con la lectura de cada matriz)    
+                    
                     //---------------------------------------------
 
-                    //creación de la matriz resultante y luego impresa en la consola
+                    //creación de la matriz resultante y luego imprimir en la consola
 
                     for (int i=0; i < m1.length; i++) {
                         for (int j = 0; j < m2.length; j++) {
@@ -506,7 +514,64 @@ public class Codgio4 {
 
                     case 2:
 
-                        System.out.println("Has seleccionado la opcion 2");
+                        System.out.println("Has seleccionado la opcion 2: Resta de matrices");
+                        
+                        //resta de las matrices a operar
+
+                    //--------------------------------------------------
+
+                    int[][] m3 = new int[3][3];
+                    m3[0][0] = 1;
+                    m3[0][1] = 2;
+                    m3[0][2] = 3;
+                    m3[1][0] = 4;
+                    m3[1][1] = 5;
+                    m3[1][2] = 6;
+                    m3[2][0] = 7;
+                    m3[2][1] = 8;
+                    m3[2][2] = 9;
+
+                    int[][] m4 = new int[3][3];
+                    m4[0][0] = 9;
+                    m4[0][1] = 6;
+                    m4[0][2] = 8;
+                    m4[1][0] = 1;
+                    m4[1][1] = 4;
+                    m4[1][2] = 7;
+                    m4[2][0] = 2;
+                    m4[2][1] = 3;
+                    m4[2][2] = 5;
+
+                    int[][] mRe = new int[m3.length][m4[0].length];
+
+                    //selección de las matrices a operar
+
+                    //---------------------------------------------
+
+                    //aqui va la anidación de las dos matrices a operar!!!!
+
+                    //---------------------------------------------
+
+
+                    //creación de la matriz resultante y luego impresa en la consola
+
+                    //---------------------------------------------
+
+                    for (int i=0; i < m3.length; i++) {
+                        for (int j = 0; j < m4.length; j++) {
+                            mRe[i][j] = m3[i][j] - m4[i][j];
+                        }
+                    }
+
+                    System.out.println("La matriz resultante R es: ");
+                    for (int i=0; i < mRe.length; i++) {
+                        for (int j=0; j < mRe.length; j++) {
+                            System.out.print("[ "+ mRe[i][j] + " ]");
+                        }
+                        System.out.println(" ");
+                    }
+
+                    //--------------------------------------------------
 
                         break;
 
@@ -536,7 +601,7 @@ public class Codgio4 {
 
                             Scanner teclado2 = new Scanner(System.in);
                             int indicenumero; //Opcion que debe elegir el usuario
-                            System.out.println("¿Qué operación desea realizar?: ");
+                            System.out.println("Ingrese un número: ");
                             indicenumero = teclado2.nextInt();
 
                             int[][] m5 = new int[3][3];
@@ -613,12 +678,7 @@ public class Codgio4 {
 
                             //---------------------------------------------
 
-
-
-                            //---------------------------------------------
-
-
-                            //creación de la matriz resultante y luego impresa en la consola
+                            //aqui va la anidación de las dos matrices a operar!!!!
 
                             //---------------------------------------------
                             
@@ -717,7 +777,7 @@ public class Codgio4 {
                             System.out.println("El tercer termino de la matriz es: ");
                             for (int i=0; i < tercerTerR.length; i++) {
                                 for (int j=0; j < tercerTerR[0].length; j++) {
-                                    System.out.print("[ "+ tercerTerR[i][j] + " ]");
+                                    //System.out.print("[ "+ tercerTerR[i][j] + " ]");
                                 }
                                 System.out.println(" ");
                             }
@@ -725,7 +785,7 @@ public class Codgio4 {
                             System.out.println("El cuarto termino de la matriz es: ");
                             for (int i=0; i < cuartoTerR.length; i++) {
                                 for (int j=0; j < cuartoTerR[0].length; j++) {
-                                    System.out.print("[ "+ cuartoTerR[i][j] + " ]");
+                                    //System.out.print("[ "+ cuartoTerR[i][j] + " ]");
                                 }
                                 System.out.println(" ");
                             }
@@ -733,7 +793,7 @@ public class Codgio4 {
                             System.out.println("El quinto termino de la matriz es: ");
                             for (int i=0; i < quintoTerR.length; i++) {
                                 for (int j=0; j < quintoTerR[0].length; j++) {
-                                    System.out.print("[ "+ quintoTerR[i][j] + " ]");
+                                    //System.out.print("[ "+ quintoTerR[i][j] + " ]");
                                 }
                                 System.out.println(" ");
                             }
@@ -741,7 +801,7 @@ public class Codgio4 {
                             System.out.println("El sexto termino de la matriz es: ");
                             for (int i=0; i < sextoTerR.length; i++) {
                                 for (int j=0; j < sextoTerR[0].length; j++) {
-                                    System.out.print("[ "+ sextoTerR[i][j] + " ]");
+                                   // System.out.print("[ "+ sextoTerR[i][j] + " ]");
                                 }
                                 System.out.println(" ");
                             }
@@ -749,7 +809,7 @@ public class Codgio4 {
                             System.out.println("El septimo termino de la matriz es: ");
                             for (int i=0; i < septTerR.length; i++) {
                                 for (int j=0; j < septTerR[0].length; j++) {
-                                    System.out.print("[ "+ septTerR[i][j] + " ]");
+                                    //System.out.print("[ "+ septTerR[i][j] + " ]");
                                 }
                                 System.out.println(" ");
                             }
@@ -757,7 +817,7 @@ public class Codgio4 {
                             System.out.println("El octavo termino de la matriz es: ");
                             for (int i=0; i < octaTerR.length; i++) {
                                 for (int j=0; j < octaTerR[0].length; j++) {
-                                    System.out.print("[ "+ octaTerR[i][j] + " ]");
+                                    //System.out.print("[ "+ octaTerR[i][j] + " ]");
                                 }
                                 System.out.println(" ");
                             }
@@ -765,7 +825,7 @@ public class Codgio4 {
                             System.out.println("El noveno termino de la matriz es: ");
                             for (int i=0; i < noveTerR.length; i++) {
                                 for (int j=0; j < noveTerR[0].length; j++) {
-                                    System.out.print("[ "+ noveTerR[i][j] + " ]");
+                                    //System.out.print("[ "+ noveTerR[i][j] + " ]");
                                 }
                                 System.out.println(" ");
                             }
@@ -806,14 +866,14 @@ public class Codgio4 {
 
                     case 4: {
 
-                        System.out.println("Has seleccionado la opcion 4");
+                        System.out.println("Has seleccionado la opcion 4: División de matrices");
 
                         break;
                     }
 
                     case 5: {
 
-                        System.out.println("Has seleccionado la opcion 5");
+                        System.out.println("Has seleccionado la opcion 5: Transpuesta de una matriz");
                         
                     int[][] m7 = new int[3][3];
                     
@@ -850,21 +910,209 @@ public class Codgio4 {
 
                     case 6: {
 
-                        System.out.println("Has seleccionado la opcion 6");
+                        System.out.println("Has seleccionado la opcion 6: Matriz Inversa");
 
                         break;
                     }
 
                     case 7: {
 
-                        System.out.println("Has seleccionado la opcion 7");
+                        System.out.println("Has seleccionado la opcion 7: Potencia de la matriz");
+                        
+                        //ingreso de la letra de la matriz a operar
+
+                    /*
+                    Scanner opc1 = new Scanner(System.in);
+                    String opcm1; //Opcion que debe elegir el usuario
+                    System.out.println("Ingrese la letra de la matriz a operar: ");
+                    opcm1 = opc1.nextLine();
+                     */
+
+                    //establezco el indice para la letra de la matriz
+
+                    //indicematriz = ;
+
+                    //dentro del switch pongo mi indice que tendrá un valor fijo dependiendo de la letra ingresada
+
+                    /*
+                    switch (opcm1) {
+
+                        case "a": {
+
+                            //aqui va el indice igualado a la matriz fija
+
+                            break;
+                        }
+
+                        case "b": {
+
+                            break;
+                        }
+                        case "c": {
+
+                            break;
+                        }
+
+                        case "d": {
+
+                            break;
+                        }
+
+                        case "e": {
+
+                            break;
+                        }
+
+                        case "f": {
+
+                            break;
+                        }
+
+                        case "g": {
+
+                            break;
+                        }
+
+                        case "h": {
+
+                            break;
+                        }
+
+                        case "i": {
+
+                            break;
+                        }
+
+                        case "j": {
+
+                            break;
+                        }
+
+                        case "k": {
+
+                            break;
+                        }
+
+                        case "l": {
+
+                            break;
+                        }
+
+                        case "m": {
+
+                            break;
+                        }
+
+                        case "n": {
+
+                            break;
+                        }
+
+                        case "o": {
+
+                            break;
+                        }
+
+                        case "p": {
+
+                            break;
+                        }
+
+                        case "q": {
+
+                            break;
+                        }
+
+                        case "r": {
+
+                            break;
+                        }
+
+                        case "s": {
+
+                            break;
+                        }
+
+                        case "t": {
+
+                            break;
+                        }
+
+                        case "u": {
+
+                            break;
+                        }
+
+                        case "v": {
+
+                            break;
+                        }
+
+                        case "w": {
+
+                            break;
+                        }
+
+                        case "x": {
+
+                            break;
+                        }
+
+                        case "y": {
+
+                            break;
+                        }
+
+                        case "z": {
+
+                            break;
+                        }
+                    }
+                     */
+                    
+                    //aqui esta la operación sin anidación!!!
+
+                    //el usuario ingresa un numero que será la potencia de la matriz
+
+                    System.out.println("Ingrese el numero a elevar la matriz: ");
+
+                    Scanner elevarnumero = new Scanner(System.in);
+                    int numpot; //Opcion que debe elegir el usuario
+                    numpot = elevarnumero.nextInt();
+
+                    int[][] m9 = new int[3][3];
+                    m9[0][0] = 1;
+                    m9[0][1] = 2;
+                    m9[0][2] = 3;
+                    m9[1][0] = 4;
+                    m9[1][1] = 5;
+                    m9[1][2] = 6;
+                    m9[2][0] = 7;
+                    m9[2][1] = 8;
+                    m9[2][2] = 9;
+
+                    int[][] maPotR = new int[m9.length][m9[0].length];
+
+                    for (int i=0; i < m9.length; i++) {
+                        for (int j = 0; j < m9.length; j++) {
+                            maPotR[i][j] = numpot * m9[i][j];
+                        }
+                    }
+
+                    System.out.println("La matriz resultante R es: ");
+                    for (int i=0; i < maPotR.length; i++) {
+                        for (int j=0; j < maPotR.length; j++) {
+                            System.out.print("[ "+ maPotR[i][j] + " ]");
+                        }
+                        System.out.println(" ");
+                    }
 
                         break;
                     }
 
                     case 8: {
 
-                        System.out.println("Has seleccionado la opcion 8");
+                        System.out.println("Has seleccionado la opcion 8: Determinante de una matriz");
                         System.out.println("");
                         
                     //ingreso de la matriz
