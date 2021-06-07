@@ -865,6 +865,118 @@ public class Codgio4 {
                     case 8: {
 
                         System.out.println("Has seleccionado la opcion 8");
+                        System.out.println("");
+                        
+                    //ingreso de la matriz
+
+                    int[][] m8 = new int[3][3];
+                    m8[0][0] = 1;
+                    m8[0][1] = 2;
+                    m8[0][2] = 3;
+                    m8[1][0] = 4;
+                    m8[1][1] = 5;
+                    m8[1][2] = 6;
+                    m8[2][0] = 7;
+                    m8[2][1] = 8;
+                    m8[2][2] = 9;
+
+                    int[][] multi1 = new int[1][1];
+                    int[][] multi2 = new int[1][1];
+                    int[][] multi3 = new int[1][1];
+                    int[][] multi4 = new int[1][1];
+                    int[][] multi5 = new int[1][1];
+                    int[][] multi6 = new int[1][1];
+
+                    int[][] sumaterm1 = new int[1][1];
+                    int[][] restaterm1 = new int[1][1];
+
+                    int[][] determR = new int[1][1];
+
+                    //creación del cada termino
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            multi1[i][j] = (m8[0][0]*m8[1][1]*m8[2][2]);
+                            System.out.print("[ "+ multi1[i][j] + " ] +");
+                        }
+                    }
+
+                    //termino 2
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            multi2[i][j] = (m8[0][1]*m8[1][2]*m8[2][0]);
+                            System.out.print("[ "+ multi2[i][j] + " ] +");
+                        }
+                    }
+
+                    //termino 3
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            multi3[i][j] = (m8[0][2]*m8[1][0]*m8[2][1]);
+                            System.out.print("[ "+ multi3[i][j] + " ] - ");
+                        }
+                    }
+
+                    //termino 4
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            multi4[i][j] = (m8[2][0]*m8[1][1]*m8[0][2]);
+                            System.out.print("[ "+ multi4[i][j] + " ] +");
+                        }
+                    }
+
+                    //termino 5
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            multi5[i][j] = (m8[2][1]*m8[1][2]*m8[0][0]);
+                            System.out.print("[ "+ multi5[i][j] + " ] +");
+                        }
+                    }
+
+                    //termino 6
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            multi6[i][j] = (m8[2][2]*m8[1][0]*m8[0][1]);
+                            System.out.print("[ "+ multi6[i][j] + " ]");
+                        }
+                        System.out.println("");
+                    }
+
+                    //operación de los 6 terminos (parte positiva)
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            sumaterm1[i][j] = (multi1[0][0]+multi2[0][0]+multi3[0][0]);
+                            System.out.print(" "+ sumaterm1[i][j] + " - ");
+                        }
+                    }
+
+                    //operación de los 6 terminos (parte negativa)
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            restaterm1[i][j] = (multi4[0][0]+multi5[0][0]+multi6[0][0]);
+                            System.out.print(" "+ restaterm1[i][j] + " ");
+                        }
+                        System.out.println("");
+                    }
+
+                    //resta de ambas partes
+
+                    System.out.println("El determinante de la matriz es: ");
+
+                    for (int i = 0; i < 1; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            determR[i][j] = (sumaterm1[0][0] - restaterm1[0][0]);
+                            System.out.print(" "+ determR[i][j] + " ");
+                        }
+                        System.out.println("");
+                    }
 
                         break;
                     }
