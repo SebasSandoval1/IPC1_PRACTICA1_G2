@@ -539,7 +539,32 @@ public class Codgio4 {
                             System.out.println("¿Qué operación desea realizar?: ");
                             indicenumero = teclado2.nextInt();
 
+                            int[][] m5 = new int[3][3];
+                            m5[0][0] = 1;
+                            m5[0][1] = 2;
+                            m5[0][2] = 3;
+                            m5[1][0] = 4;
+                            m5[1][1] = 5;
+                            m5[1][2] = 6;
+                            m5[2][0] = 7;
+                            m5[2][1] = 8;
+                            m5[2][2] = 9;
 
+                            int[][] maResul = new int[m5.length][m5[0].length];
+
+                            for (int i=0; i < m5.length; i++) {
+                                for (int j = 0; j < m5.length; j++) {
+                                    maResul[i][j] = indicenumero * m5[i][j];
+                                }
+                            }
+
+                            System.out.println("La matriz resultante R es: ");
+                            for (int i=0; i < maResul.length; i++) {
+                                for (int j=0; j < maResul.length; j++) {
+                                    System.out.print("[ "+ maResul[i][j] + " ]");
+                                }
+                                System.out.println(" ");
+                            }
 
                             break;
 
