@@ -191,160 +191,134 @@ public class Codgio4 {
 
                         case "a": {
 
-
-
+                            break;
                         }
 
                         case "b": {
 
-
-
+                            break;
                         }
                         case "c": {
 
-
-
+                            break;
                         }
 
                         case "d": {
 
-
-
+                            break;
                         }
 
                         case "e": {
 
-
-
+                            break;
                         }
 
                         case "f": {
 
-
-
+                            break;
                         }
 
                         case "g": {
 
-
-
+                            break;
                         }
 
                         case "h": {
 
-
-
+                            break;
                         }
 
                         case "i": {
 
-
-
+                            break;
                         }
 
                         case "j": {
 
-
-
+                            break;
                         }
 
                         case "k": {
 
-
-
+                            break;
                         }
 
                         case "l": {
 
-
-
+                            break;
                         }
 
                         case "m": {
 
-
-
+                            break;
                         }
 
                         case "n": {
 
-
-
+                            break;
                         }
 
                         case "o": {
 
-
-
+                            break;
                         }
 
                         case "p": {
 
-
-
+                            break;
                         }
 
                         case "q": {
 
-
-
+                            break;
                         }
 
                         case "r": {
 
-
-
+                            break;
                         }
 
                         case "s": {
 
-
-
+                            break;
                         }
 
                         case "t": {
 
-
-
+                            break;
                         }
 
                         case "u": {
 
-
-
+                            break;
                         }
 
                         case "v": {
 
-
-
+                            break;
                         }
 
                         case "w": {
 
-
-
+                            break;
                         }
 
                         case "x": {
 
-
-
+                            break;
                         }
 
                         case "y": {
 
-
-
+                            break;
                         }
 
                         case "z": {
 
-
-
+                            break;
                         }
                     }
-
+                    
                     //ingreso de la segunda matriz a operar
 
                     opm1 = op1.nextLine();
@@ -353,131 +327,131 @@ public class Codgio4 {
 
                         case "a": {
 
-
+                        break;
                         }
 
                         case "b": {
-
-
+                            
+                        break;
                         }
                         case "c": {
-
-
+                            
+                        break;
                         }
 
                         case "d": {
 
-
+                        break;
                         }
 
                         case "e": {
 
-
+                        break;
                         }
 
                         case "f": {
 
-
+                        break;
                         }
 
                         case "g": {
 
-
+                        break;
                         }
 
                         case "h": {
 
-
+                        break;
                         }
 
                         case "i": {
 
-
+                        break;
                         }
 
                         case "j": {
 
-
+                        break;
                         }
 
                         case "k": {
 
-
+                        break;
                         }
 
                         case "l": {
 
-
+                        break;
                         }
 
                         case "m": {
 
-
+                        break;
                         }
 
                         case "n": {
 
-
+                        break;
                         }
 
                         case "o": {
 
-
+                        break;
                         }
 
                         case "p": {
 
-
+                        break;
                         }
 
                         case "q": {
 
-
+                        break;
                         }
 
                         case "r": {
 
-
+                        break;
                         }
 
                         case "s": {
 
-
+                        break;
                         }
 
                         case "t": {
 
-
+                        break;
                         }
 
                         case "u": {
 
-
+                        break;
                         }
 
                         case "v": {
 
-
+                        break;
                         }
 
                         case "w": {
 
-
+                        break;
                         }
 
                         case "x": {
 
-
+                        break;
                         }
 
                         case "y": {
-
-
+                            
+                        break;
                         }
 
                         case "z": {
 
-
+                        break;
                         }
                     }
 
