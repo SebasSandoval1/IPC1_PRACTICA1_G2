@@ -174,29 +174,359 @@ public class Codgio4 {
                     case 1:
 
                         System.out.println("Has seleccionado la opcion 1");
-                        System.out.println("Ingrese la primera matriz");
-                        
-                        
-                        int a=2;
-                        
-                        double [][] auxiliar = vector[a];
-                        System.out.println(vectorNombres[2]);
-                        for (int i = 0; i < auxiliar.length; i++) {
-                            
-                            for (int j = 0; j < auxiliar[i].length; j++) {
-                            
-                                System.out.print(auxiliar[i][j]);
-                            
-                            }
-                            System.out.println("");
-                        }
-                        
-                        
-                        
-                        
-                        
-                       
+                        System.out.println("");
 
+                    // sumatoria de dos matrices
+
+                    //-------------------------------------------------
+
+                    //ingreso de la primera matriz a operar
+
+                    Scanner op1 = new Scanner(System.in);
+                    String opm1; //Opcion que debe elegir el usuario
+                    System.out.println("Ingrese la letra de la primera matriz");
+                    opm1 = op1.nextLine();
+
+                    switch (opm1) {
+
+                        case "a": {
+
+
+
+                        }
+
+                        case "b": {
+
+
+
+                        }
+                        case "c": {
+
+
+
+                        }
+
+                        case "d": {
+
+
+
+                        }
+
+                        case "e": {
+
+
+
+                        }
+
+                        case "f": {
+
+
+
+                        }
+
+                        case "g": {
+
+
+
+                        }
+
+                        case "h": {
+
+
+
+                        }
+
+                        case "i": {
+
+
+
+                        }
+
+                        case "j": {
+
+
+
+                        }
+
+                        case "k": {
+
+
+
+                        }
+
+                        case "l": {
+
+
+
+                        }
+
+                        case "m": {
+
+
+
+                        }
+
+                        case "n": {
+
+
+
+                        }
+
+                        case "o": {
+
+
+
+                        }
+
+                        case "p": {
+
+
+
+                        }
+
+                        case "q": {
+
+
+
+                        }
+
+                        case "r": {
+
+
+
+                        }
+
+                        case "s": {
+
+
+
+                        }
+
+                        case "t": {
+
+
+
+                        }
+
+                        case "u": {
+
+
+
+                        }
+
+                        case "v": {
+
+
+
+                        }
+
+                        case "w": {
+
+
+
+                        }
+
+                        case "x": {
+
+
+
+                        }
+
+                        case "y": {
+
+
+
+                        }
+
+                        case "z": {
+
+
+
+                        }
+                    }
+
+                    //ingreso de la segunda matriz a operar
+
+                    opm1 = op1.nextLine();
+
+                    switch (opm1) {
+
+                        case "a": {
+
+
+                        }
+
+                        case "b": {
+
+
+                        }
+                        case "c": {
+
+
+                        }
+
+                        case "d": {
+
+
+                        }
+
+                        case "e": {
+
+
+                        }
+
+                        case "f": {
+
+
+                        }
+
+                        case "g": {
+
+
+                        }
+
+                        case "h": {
+
+
+                        }
+
+                        case "i": {
+
+
+                        }
+
+                        case "j": {
+
+
+                        }
+
+                        case "k": {
+
+
+                        }
+
+                        case "l": {
+
+
+                        }
+
+                        case "m": {
+
+
+                        }
+
+                        case "n": {
+
+
+                        }
+
+                        case "o": {
+
+
+                        }
+
+                        case "p": {
+
+
+                        }
+
+                        case "q": {
+
+
+                        }
+
+                        case "r": {
+
+
+                        }
+
+                        case "s": {
+
+
+                        }
+
+                        case "t": {
+
+
+                        }
+
+                        case "u": {
+
+
+                        }
+
+                        case "v": {
+
+
+                        }
+
+                        case "w": {
+
+
+                        }
+
+                        case "x": {
+
+
+                        }
+
+                        case "y": {
+
+
+                        }
+
+                        case "z": {
+
+
+                        }
+                    }
+
+                    /*
+                    //impresion de las dos matrices a operar (aun no las anclo)
+
+                    int matrizb = 3;
+
+                    double [][] auxiliar2 = vector[matrizb];
+                    System.out.println(vectorNombres[3]);
+
+
+                    for (int i = 0; i < auxiliar2.length; i++) {
+                        for (int j = 0; j < auxiliar2[i].length; j++) {
+                            System.out.print("[ "+auxiliar2[i][j]+" ]");
+                        }
+                        System.out.println(" ");
+                    }
+                    */
+
+                    //-------------------------------------------
+
+                    /*
+
+                    int[][] mR = new int[m1.length][m2[0].length];
+                    
+                    //proceso de sumatoria de matrices (ya tiene que estar anidado con la lectura de cada matriz)                    
+                    //---------------------------------------------
+
+                    //creación de la matriz resultante y luego impresa en la consola
+
+                    for (int i=0; i < m1.length; i++) {
+                        for (int j = 0; j < m2.length; j++) {
+                            mR[i][j] = m1[i][j] + m2[i][j];
+                        }
+                    }
+
+                    System.out.println("La matriz resultante R es: ");
+                    for (int i=0; i < mR.length; i++) {
+                        for (int j=0; j < mR.length; j++) {
+                            System.out.print("[ "+ mR[i][j] + " ]");
+                        }
+                        System.out.println(" ");
+                    }
+
+                    //--------------------------------------------------
+
+                     */
+                        
                         break;
 
                     case 2:
