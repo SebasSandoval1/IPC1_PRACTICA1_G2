@@ -118,8 +118,40 @@ public class Codgio4 {
             nfilas[i] = filas.length;
             ncolumnas[i]=ContadorColumnas;
             vector = new double[Lineasdocumento.length][filas.length][ContadorColumnas];
-            vectorNombres[i] = Nombre;
-
+            //vectorNombres[i] = Nombre;
+            
+            switch(Nombre){
+            
+                case "A":vectorNombres[0] = Nombre;;break;
+                case "B":vectorNombres[1] = Nombre;;break;
+                case "C":vectorNombres[2] = Nombre;;break;
+                case "D":vectorNombres[3] = Nombre;;break;
+                case "E":vectorNombres[4] = Nombre;;break;
+                case "F":vectorNombres[5] = Nombre;;break;
+                case "G":vectorNombres[6] = Nombre;;break;
+                case "H":vectorNombres[7] = Nombre;;break;
+                case "I":vectorNombres[8] = Nombre;;break;
+                case "J":vectorNombres[9] = Nombre;;break;
+                case "K":vectorNombres[10] = Nombre;;break;
+                case "L":vectorNombres[11] = Nombre;;break;
+                case "M":vectorNombres[12] = Nombre;;break;
+                case "N":vectorNombres[13] = Nombre;;break;
+                case "O":vectorNombres[14] = Nombre;;break;
+                case "P":vectorNombres[15] = Nombre;;break;
+                case "Q":vectorNombres[16] = Nombre;;break;
+                case "R":vectorNombres[17] = Nombre;;break;
+                case "S":vectorNombres[18] = Nombre;;break;
+                case "T":vectorNombres[19] = Nombre;;break;
+                case "U":vectorNombres[20] = Nombre;;break;
+                case "V":vectorNombres[21] = Nombre;;break;
+                case "W":vectorNombres[22] = Nombre;;break;
+                case "X":vectorNombres[23] = Nombre;;break;
+                case "Y":vectorNombres[24] = Nombre;;break;
+                case "Z":vectorNombres[25] = Nombre;;break;
+                default:System.out.println("Letra no valida");;break;
+            }
+            
+            
         }
 
         for (int i = 0; i < Lineasdocumento.length; i++) {
@@ -194,275 +226,14 @@ public class Codgio4 {
                     System.out.println("Ingrese la letra de la primera matriz");
                     opm1 = op1.nextLine();
 
-                    switch (opm1) {
-
-                        case "a": {
-
-                            break;
-                        }
-
-                        case "b": {
-
-                            break;
-                        }
-                        case "c": {
-
-                            break;
-                        }
-
-                        case "d": {
-
-                            break;
-                        }
-
-                        case "e": {
-
-                            break;
-                        }
-
-                        case "f": {
-
-                            break;
-                        }
-
-                        case "g": {
-
-                            break;
-                        }
-
-                        case "h": {
-
-                            break;
-                        }
-
-                        case "i": {
-
-                            break;
-                        }
-
-                        case "j": {
-
-                            break;
-                        }
-
-                        case "k": {
-
-                            break;
-                        }
-
-                        case "l": {
-
-                            break;
-                        }
-
-                        case "m": {
-
-                            break;
-                        }
-
-                        case "n": {
-
-                            break;
-                        }
-
-                        case "o": {
-
-                            break;
-                        }
-
-                        case "p": {
-
-                            break;
-                        }
-
-                        case "q": {
-
-                            break;
-                        }
-
-                        case "r": {
-
-                            break;
-                        }
-
-                        case "s": {
-
-                            break;
-                        }
-
-                        case "t": {
-
-                            break;
-                        }
-
-                        case "u": {
-
-                            break;
-                        }
-
-                        case "v": {
-
-                            break;
-                        }
-
-                        case "w": {
-
-                            break;
-                        }
-
-                        case "x": {
-
-                            break;
-                        }
-
-                        case "y": {
-
-                            break;
-                        }
-
-                        case "z": {
-
-                            break;
-                        }
-                    }
+                   
                     
                     //ingreso de la segunda matriz a operar
 
                     System.out.println("Ingrese la letra de la segunda matriz: ");
                     opm1 = op1.nextLine();
 
-                    switch (opm1) {
-
-                        case "a": {
-
-                        break;
-                        }
-
-                        case "b": {
-                            
-                        break;
-                        }
-                        case "c": {
-                            
-                        break;
-                        }
-
-                        case "d": {
-
-                        break;
-                        }
-
-                        case "e": {
-
-                        break;
-                        }
-
-                        case "f": {
-
-                        break;
-                        }
-
-                        case "g": {
-
-                        break;
-                        }
-
-                        case "h": {
-
-                        break;
-                        }
-
-                        case "i": {
-
-                        break;
-                        }
-
-                        case "j": {
-
-                        break;
-                        }
-
-                        case "k": {
-
-                        break;
-                        }
-
-                        case "l": {
-
-                        break;
-                        }
-
-                        case "m": {
-
-                        break;
-                        }
-
-                        case "n": {
-
-                        break;
-                        }
-
-                        case "o": {
-
-                        break;
-                        }
-
-                        case "p": {
-
-                        break;
-                        }
-
-                        case "q": {
-
-                        break;
-                        }
-
-                        case "r": {
-
-                        break;
-                        }
-
-                        case "s": {
-
-                        break;
-                        }
-
-                        case "t": {
-
-                        break;
-                        }
-
-                        case "u": {
-
-                        break;
-                        }
-
-                        case "v": {
-
-                        break;
-                        }
-
-                        case "w": {
-
-                        break;
-                        }
-
-                        case "x": {
-
-                        break;
-                        }
-
-                        case "y": {
-                            
-                        break;
-                        }
-
-                        case "z": {
-
-                        break;
-                        }
-                    }
-
+                    
                     /*
                     //impresion de las dos matrices a operar (aun no las anclo)
 
@@ -934,141 +705,9 @@ public class Codgio4 {
 
                     //dentro del switch pongo mi indice que tendrá un valor fijo dependiendo de la letra ingresada
 
-                    /*
-                    switch (opcm1) {
-
-                        case "a": {
-
-                            //aqui va el indice igualado a la matriz fija
-
-                            break;
-                        }
-
-                        case "b": {
-
-                            break;
-                        }
-                        case "c": {
-
-                            break;
-                        }
-
-                        case "d": {
-
-                            break;
-                        }
-
-                        case "e": {
-
-                            break;
-                        }
-
-                        case "f": {
-
-                            break;
-                        }
-
-                        case "g": {
-
-                            break;
-                        }
-
-                        case "h": {
-
-                            break;
-                        }
-
-                        case "i": {
-
-                            break;
-                        }
-
-                        case "j": {
-
-                            break;
-                        }
-
-                        case "k": {
-
-                            break;
-                        }
-
-                        case "l": {
-
-                            break;
-                        }
-
-                        case "m": {
-
-                            break;
-                        }
-
-                        case "n": {
-
-                            break;
-                        }
-
-                        case "o": {
-
-                            break;
-                        }
-
-                        case "p": {
-
-                            break;
-                        }
-
-                        case "q": {
-
-                            break;
-                        }
-
-                        case "r": {
-
-                            break;
-                        }
-
-                        case "s": {
-
-                            break;
-                        }
-
-                        case "t": {
-
-                            break;
-                        }
-
-                        case "u": {
-
-                            break;
-                        }
-
-                        case "v": {
-
-                            break;
-                        }
-
-                        case "w": {
-
-                            break;
-                        }
-
-                        case "x": {
-
-                            break;
-                        }
-
-                        case "y": {
-
-                            break;
-                        }
-
-                        case "z": {
-
-                            break;
-                        }
-                    }
-                     */
+                   
+                    
+                     
                     
                     //aqui esta la operación sin anidación!!!
 
