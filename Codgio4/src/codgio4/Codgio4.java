@@ -395,391 +395,830 @@ public class Codgio4 {
                 switch (opcion) {
                     case 1:
 
-                        System.out.println("Has seleccionado la opcion 1: Suma de matrices");
-                        System.out.println("");
+                        System.out.println("Bienvenido Suma de Matrices");
 
-                        // sumatoria de dos matrices
-                        //-------------------------------------------------
-                        //ingreso de la primera matriz a operar
-                        Scanner op1 = new Scanner(System.in);
-                        String opm1; //Opcion que debe elegir el usuario
-                        System.out.println("Ingrese la letra de la primera matriz");
-                        opm1 = op1.nextLine();
+                        boolean confirmarsuma=true;
+                        
+                        while(confirmarsuma==true){
 
-                        //ingreso de la segunda matriz a operar
-                        System.out.println("Ingrese la letra de la segunda matriz: ");
-                        opm1 = op1.nextLine();
+                       
 
-                        /*
-                    //impresion de las dos matrices a operar (aun no las anclo)
+                        System.out.println("Ingrese Matriz 1:");
+                        String Nombrematriz1parasuma;
+                        Nombrematriz1parasuma = teclado.next();
+                        
+                        int posicion = 0;
 
-                    int matrizb = 3;
+                        switch (Nombrematriz1parasuma) {
 
-                    double [][] auxiliar2 = vector[matrizb];
-                    System.out.println(vectorNombres[3]);
+                            case "A":
+                                posicion = 0;
+                                break;
+                            case "B":
+                                posicion = 1;
+                                break;
+                            case "C":
+                                posicion = 2;
+                                break;
+                            case "D":
+                                posicion = 3;
+                                break;
+                            case "E":
+                                posicion = 4;
+                                break;
+                            case "F":
+                                posicion = 5;
+                                break;
+                            case "G":
+                                posicion = 6;
+                                break;
+                            case "H":
+                                posicion = 7;
+                                break;
+                            case "I":
+                                posicion = 8;
+                                break;
+                            case "J":
+                                posicion = 9;
+                                break;
+                            case "K":
+                                posicion = 10;
+                                break;
+                            case "L":
+                                posicion = 11;
+                                break;
+                            case "M":
+                                posicion = 12;
+                                break;
+                            case "N":
+                                posicion = 13;
+                                break;
+                            case "O":
+                                posicion = 14;
+                                break;
+                            case "P":
+                                posicion = 15;
+                                break;
+                            case "Q":
+                                posicion = 16;
+                                break;
+                            case "R":
+                                posicion = 17;
+                                break;
+                            case "S":
+                                posicion = 18;
+                                break;
+                            case "T":
+                                posicion = 19;
+                                break;
+                            case "U":
+                                posicion = 20;
+                                break;
+                            case "V":
+                                posicion = 21;
+                                break;
+                            case "W":
+                                posicion = 22;
+                                break;
+                            case "X":
+                                posicion = 23;
+                                break;
+                            case "Y":
+                                posicion = 24;
+                                break;
+                            case "Z":
+                                posicion = 25;
+                                break;
 
+                        }                      
+                               double [][] matrizs = vector[posicion];  
+                               
+                                                       
+                            
+                            
+                            System.out.println("Ingrese Matriz 2:");
+                            String Nombrematriz1parasuma2;
+                        Nombrematriz1parasuma2 = teclado.next();
+                        int posicion2 = 0;
 
-                    for (int i = 0; i < auxiliar2.length; i++) {
-                        for (int j = 0; j < auxiliar2[i].length; j++) {
-                            System.out.print("[ "+auxiliar2[i][j]+" ]");
-                        }
-                        System.out.println(" ");
-                    }
-                         */
-                        //-------------------------------------------
+                        switch (Nombrematriz1parasuma2) {
 
-                        /*
+                            case "A":
+                                posicion2 = 0;
+                                break;
+                            case "B":
+                                posicion2 = 1;
+                                break;
+                            case "C":
+                                posicion2 = 2;
+                                break;
+                            case "D":
+                                posicion2 = 3;
+                                break;
+                            case "E":
+                                posicion2 = 4;
+                                break;
+                            case "F":
+                                posicion2 = 5;
+                                break;
+                            case "G":
+                                posicion2 = 6;
+                                break;
+                            case "H":
+                                posicion2 = 7;
+                                break;
+                            case "I":
+                                posicion2 = 8;
+                                break;
+                            case "J":
+                                posicion2 = 9;
+                                break;
+                            case "K":
+                                posicion2 = 10;
+                                break;
+                            case "L":
+                                posicion2 = 11;
+                                break;
+                            case "M":
+                                posicion2 = 12;
+                                break;
+                            case "N":
+                                posicion2 = 13;
+                                break;
+                            case "O":
+                                posicion2 = 14;
+                                break;
+                            case "P":
+                                posicion2 = 15;
+                                break;
+                            case "Q":
+                                posicion2 = 16;
+                                break;
+                            case "R":
+                                posicion2 = 17;
+                                break;
+                            case "S":
+                                posicion2 = 18;
+                                break;
+                            case "T":
+                                posicion2 = 19;
+                                break;
+                            case "U":
+                                posicion2 = 20;
+                                break;
+                            case "V":
+                                posicion2 = 21;
+                                break;
+                            case "W":
+                                posicion2 = 22;
+                                break;
+                            case "X":
+                                posicion2 = 23;
+                                break;
+                            case "Y":
+                                posicion2 = 24;
+                                break;
+                            case "Z":
+                                posicion2 = 25;
+                                break;
 
-                    int[][] mR = new int[m1.length][m2[0].length];
-                    
-                    //proceso de sumatoria de matrices (ya tiene que estar anidado con la lectura de cada matriz)    
-                    
-                    //---------------------------------------------
-
-                    //creación de la matriz resultante y luego imprimir en la consola
-
-                    for (int i=0; i < m1.length; i++) {
-                        for (int j = 0; j < m2.length; j++) {
-                            mR[i][j] = m1[i][j] + m2[i][j];
-                        }
-                    }
-
-                    System.out.println("La matriz resultante R es: ");
-                    for (int i=0; i < mR.length; i++) {
-                        for (int j=0; j < mR.length; j++) {
-                            System.out.print("[ "+ mR[i][j] + " ]");
-                        }
-                        System.out.println(" ");
-                    }
-
-                    //--------------------------------------------------
-
-                         */
+                        }                      
+                                                                                                            
+                                                       
+                            double [][] matrizs2 = vector[posicion2];
+                        
+                               int [][] resultadosuma = new int[matrizs.length][matrizs2[0].length];
+                               
+                               if(matrizs.length == matrizs2.length && matrizs[0].length == matrizs2[0].length)
+                               {
+                                   
+                            for (int x=0; x < matrizs.length; x++) {
+                                for (int y=0; y < matrizs[x].length; y++) {				
+                                    resultadosuma[x][y]= (int) (matrizs[x][y]+ matrizs2[x][y]);
+                                    
+                            }
+                                }
+                               
+                            System.out.println("Resultado de la suma");
+                for (int x=0; x < resultadosuma.length; x++) {
+                             for (int y=0; y < resultadosuma[x].length; y++) {
+                                     
+                                            System.out.print(" ["+resultadosuma[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                                                                       }
+                                          confirmarsuma = false; 
+                                           
+                               }
+                               if(matrizs.length != matrizs2.length || matrizs[0].length != matrizs2[0].length)
+                               {
+                                   System.out.println("Matricez no compatibles por diferencias en dimensiones");
+                                   System.out.println("Ingresar nuevamente los nombres de las matrices a sumar");
+                               }
+                               }
                         break;
 
                     case 2:
 
-                        System.out.println("Has seleccionado la opcion 2: Resta de matrices");
+                         System.out.println("Bienvenido A Resta de Matrices");
+                        
+                        boolean confirmarsresta=true;
+                        
+                        while(confirmarsresta==true){
+                        
+                        
+                        
+                        System.out.println("Ingrese Matriz 1:");
+                        String Nombrematriz1pararesta;
+                        Nombrematriz1pararesta = teclado.next();
+                        
+                        int posicionresta1 = 0;
 
-                        //resta de las matrices a operar
-                        //--------------------------------------------------
-                        int[][] m3 = new int[3][3];
-                        m3[0][0] = 1;
-                        m3[0][1] = 2;
-                        m3[0][2] = 3;
-                        m3[1][0] = 4;
-                        m3[1][1] = 5;
-                        m3[1][2] = 6;
-                        m3[2][0] = 7;
-                        m3[2][1] = 8;
-                        m3[2][2] = 9;
+                        switch (Nombrematriz1pararesta) {
 
-                        int[][] m4 = new int[3][3];
-                        m4[0][0] = 9;
-                        m4[0][1] = 6;
-                        m4[0][2] = 8;
-                        m4[1][0] = 1;
-                        m4[1][1] = 4;
-                        m4[1][2] = 7;
-                        m4[2][0] = 2;
-                        m4[2][1] = 3;
-                        m4[2][2] = 5;
-
-                        int[][] mRe = new int[m3.length][m4[0].length];
-
-                        //selección de las matrices a operar
-                        //---------------------------------------------
-                        //aqui va la anidación de las dos matrices a operar!!!!
-                        //---------------------------------------------
-                        //creación de la matriz resultante y luego impresa en la consola
-                        //---------------------------------------------
-                        for (int i = 0; i < m3.length; i++) {
-                            for (int j = 0; j < m4.length; j++) {
-                                mRe[i][j] = m3[i][j] - m4[i][j];
-                            }
-                        }
-
-                        System.out.println("La matriz resultante R es: ");
-                        for (int i = 0; i < mRe.length; i++) {
-                            for (int j = 0; j < mRe.length; j++) {
-                                System.out.print("[ " + mRe[i][j] + " ]");
-                            }
-                            System.out.println(" ");
-                        }
-
-                        //--------------------------------------------------
-                        break;
-
-                    case 3: {
-
-                        System.out.println("Has seleccionado la opcion 3: Multiplicación");
-
-                        //submenú de la opción multiplicacion de matrices
-                        System.out.println("============MENU MULTIPLICACIÓN============");
-                        System.out.println("1. Multiplicar matriz por un número");
-                        System.out.println("2. Multiplicar matriz por otra matriz");
-                        System.out.println("===========================================");
-
-                        Scanner numeropedido = new Scanner(System.in);
-                        int numero; //Opcion que debe elegir el usuario
-                        System.out.println("¿Qué operación desea realizar?: ");
-                        numero = numeropedido.nextInt();
-
-                        //--------------------------------------------------------------
-                        switch (numero) {
-
-                            case 1: {
-
-                                System.out.println("Has seleccionado la opción 1: Matriz por un número");
-
-                                Scanner teclado2 = new Scanner(System.in);
-                                int indicenumero; //Opcion que debe elegir el usuario
-                                System.out.println("Ingrese un número: ");
-                                indicenumero = teclado2.nextInt();
-
-                                int[][] m5 = new int[3][3];
-                                m5[0][0] = 1;
-                                m5[0][1] = 2;
-                                m5[0][2] = 3;
-                                m5[1][0] = 4;
-                                m5[1][1] = 5;
-                                m5[1][2] = 6;
-                                m5[2][0] = 7;
-                                m5[2][1] = 8;
-                                m5[2][2] = 9;
-
-                                int[][] maResul = new int[m5.length][m5[0].length];
-
-                                for (int i = 0; i < m5.length; i++) {
-                                    for (int j = 0; j < m5.length; j++) {
-                                        maResul[i][j] = indicenumero * m5[i][j];
-                                    }
-                                }
-
-                                System.out.println("La matriz resultante R es: ");
-                                for (int i = 0; i < maResul.length; i++) {
-                                    for (int j = 0; j < maResul.length; j++) {
-                                        System.out.print("[ " + maResul[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
+                            case "A":
+                                posicionresta1 = 0;
+                                break;
+                            case "B":
+                                posicionresta1 = 1;
+                                break;
+                            case "C":
+                                posicionresta1 = 2;
+                                break;
+                            case "D":
+                                posicionresta1 = 3;
+                                break;
+                            case "E":
+                                posicionresta1 = 4;
+                                break;
+                            case "F":
+                                posicionresta1 = 5;
+                                break;
+                            case "G":
+                                posicionresta1 = 6;
+                                break;
+                            case "H":
+                                posicionresta1 = 7;
+                                break;
+                            case "I":
+                                posicionresta1 = 8;
+                                break;
+                            case "J":
+                                posicionresta1 = 9;
+                                break;
+                            case "K":
+                                posicionresta1 = 10;
+                                break;
+                            case "L":
+                                posicionresta1 = 11;
+                                break;
+                            case "M":
+                                posicionresta1 = 12;
+                                break;
+                            case "N":
+                                posicionresta1 = 13;
+                                break;
+                            case "O":
+                                posicionresta1 = 14;
+                                break;
+                            case "P":
+                                posicionresta1 = 15;
+                                break;
+                            case "Q":
+                                posicionresta1 = 16;
+                                break;
+                            case "R":
+                                posicionresta1 = 17;
+                                break;
+                            case "S":
+                                posicionresta1 = 18;
+                                break;
+                            case "T":
+                                posicionresta1 = 19;
+                                break;
+                            case "U":
+                                posicionresta1 = 20;
+                                break;
+                            case "V":
+                                posicionresta1 = 21;
+                                break;
+                            case "W":
+                                posicionresta1 = 22;
+                                break;
+                            case "X":
+                                posicionresta1 = 23;
+                                break;
+                            case "Y":
+                                posicionresta1 = 24;
+                                break;
+                            case "Z":
+                                posicionresta1 = 25;
                                 break;
 
+                        }                      
+                               double [][] matrizr = vector[posicionresta1];  
+                               
+                                                       
+                            
+                            
+                            System.out.println("Ingrese Matriz 2:");
+                            String Nombrematriz1pararesta2;
+                        Nombrematriz1pararesta2 = teclado.next();
+                        int posicionresta2 = 0;
+
+                        switch (Nombrematriz1pararesta2) {
+
+                            case "A":
+                                posicionresta2 = 0;
+                                break;
+                            case "B":
+                                posicionresta2 = 1;
+                                break;
+                            case "C":
+                                posicionresta2 = 2;
+                                break;
+                            case "D":
+                                posicionresta2 = 3;
+                                break;
+                            case "E":
+                                posicionresta2 = 4;
+                                break;
+                            case "F":
+                                posicionresta2 = 5;
+                                break;
+                            case "G":
+                                posicionresta2 = 6;
+                                break;
+                            case "H":
+                                posicionresta2 = 7;
+                                break;
+                            case "I":
+                                posicionresta2 = 8;
+                                break;
+                            case "J":
+                                posicionresta2 = 9;
+                                break;
+                            case "K":
+                                posicionresta2 = 10;
+                                break;
+                            case "L":
+                                posicionresta2 = 11;
+                                break;
+                            case "M":
+                                posicionresta2 = 12;
+                                break;
+                            case "N":
+                                posicionresta2 = 13;
+                                break;
+                            case "O":
+                                posicionresta2 = 14;
+                                break;
+                            case "P":
+                                posicionresta2 = 15;
+                                break;
+                            case "Q":
+                                posicionresta2 = 16;
+                                break;
+                            case "R":
+                                posicionresta2 = 17;
+                                break;
+                            case "S":
+                                posicionresta2 = 18;
+                                break;
+                            case "T":
+                                posicionresta2 = 19;
+                                break;
+                            case "U":
+                                posicionresta2 = 20;
+                                break;
+                            case "V":
+                                posicionresta2 = 21;
+                                break;
+                            case "W":
+                                posicionresta2 = 22;
+                                break;
+                            case "X":
+                                posicionresta2 = 23;
+                                break;
+                            case "Y":
+                                posicionresta2 = 24;
+                                break;
+                            case "Z":
+                                posicionresta2 = 25;
+                                break;
+
+                        }                      
+                                                                                                            
+                                                       
+                            double [][] matrizr2 = vector[posicionresta2];
+
+                               int [][] resultadoresta = new int[matrizr.length][matrizr2[0].length];
+                             if(matrizr.length == matrizr2.length && matrizr[0].length == matrizr2[0].length)
+                             {
+                            for (int x=0; x < matrizr.length; x++) {
+                                for (int y=0; y < matrizr[x].length; y++) {				
+                                    resultadoresta[x][y]= (int) (matrizr[x][y]- matrizr2[x][y]);								
                             }
-
-                            case 2: {
-
-                                System.out.println("Has seleccionado la opción 2: Matriz por otra matriz");
-
-                                //multiplicacion de dos matrices propuestas por el usuario
-                                int[][] m5 = new int[3][3];
-                                m5[0][0] = 1;
-                                m5[0][1] = 2;
-                                m5[0][2] = 3;
-                                m5[1][0] = 4;
-                                m5[1][1] = 5;
-                                m5[1][2] = 6;
-                                m5[2][0] = 7;
-                                m5[2][1] = 8;
-                                m5[2][2] = 9;
-
-                                int[][] m6 = new int[3][3];
-                                m6[0][0] = 9;
-                                m6[0][1] = 6;
-                                m6[0][2] = 8;
-                                m6[1][0] = 1;
-                                m6[1][1] = 4;
-                                m6[1][2] = 7;
-                                m6[2][0] = 2;
-                                m6[2][1] = 3;
-                                m6[2][2] = 5;
-
-                                int[][] matResultantes = new int[m5.length][m6[0].length];
-                                int[][] primerTerR = new int[1][1];
-                                int[][] segundoTerR = new int[1][1];
-                                int[][] tercerTerR = new int[1][1];
-                                int[][] cuartoTerR = new int[1][1];
-                                int[][] quintoTerR = new int[1][1];
-                                int[][] sextoTerR = new int[1][1];
-                                int[][] septTerR = new int[1][1];
-                                int[][] octaTerR = new int[1][1];
-                                int[][] noveTerR = new int[1][1];
-
-                                //selección de las matrices a operar
-                                //---------------------------------------------
-                                //aqui va la anidación de las dos matrices a operar!!!!
-                                //---------------------------------------------
-                                //creación del primer termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        primerTerR[i][j] = (m5[0][0] * m6[0][0]) + (m5[0][1] * m6[1][0]) + (m5[0][2] * m6[2][0]);
-                                    }
                                 }
+                            System.out.println("Resultado de la resta");
+                for (int x=0; x < resultadoresta.length; x++) {
+                             for (int y=0; y < resultadoresta[x].length; y++) {
+                                     
+                                            System.out.print(" ["+resultadoresta[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                                                                        }
+                confirmarsresta = false;
+                
+                        }
+                            if (matrizr.length != matrizr2.length || matrizr[0].length != matrizr2[0].length) {
+                                System.out.println("Matricez no compatibles por diferencias en dimensiones");
+                                System.out.println("Ingrese nuevamente los nombres de las matrices a restar");
+                            }
+                        }
+                        
+                        break;
 
-                                //creacion del segundo termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        segundoTerR[i][j] = (m5[0][0] * m6[0][1]) + (m5[0][1] * m6[1][1]) + (m5[0][2] * m6[2][1]);
-                                    }
+                    case 3: System.out.println("Has seleccionado la opcion 3");
+                        System.out.println("Tipo de multiplicacion deseada:");
+                            System.out.println("1)Matriz x Valor Numerico");
+                            System.out.println("2)Matriz x Matriz");
+                            System.out.println("3)Salir");
+                            int opciondem = teclado.nextInt();
+                        boolean salirmulti = false;
+                        
+                        while(salirmulti == false){
+                        
+                        
+                            
+                            
+                        if (opciondem==1) {
+                            
+                            
+                            
+                            System.out.println("Ingrese Matriz 1:");
+                        String nombrematrizv;
+                        nombrematrizv = teclado.next();
+                        
+                        int posicionmulti = 0;
+
+                        switch (nombrematrizv) {
+
+                            case "A":
+                                posicionmulti = 0;
+                                break;
+                            case "B":
+                                posicionmulti = 1;
+                                break;
+                            case "C":
+                                posicionmulti = 2;
+                                break;
+                            case "D":
+                                posicionmulti = 3;
+                                break;
+                            case "E":
+                                posicionmulti = 4;
+                                break;
+                            case "F":
+                                posicionmulti = 5;
+                                break;
+                            case "G":
+                                posicionmulti = 6;
+                                break;
+                            case "H":
+                                posicionmulti = 7;
+                                break;
+                            case "I":
+                                posicionmulti = 8;
+                                break;
+                            case "J":
+                                posicionmulti = 9;
+                                break;
+                            case "K":
+                                posicionmulti = 10;
+                                break;
+                            case "L":
+                                posicionmulti = 11;
+                                break;
+                            case "M":
+                                posicionmulti = 12;
+                                break;
+                            case "N":
+                                posicionmulti = 13;
+                                break;
+                            case "O":
+                                posicionmulti = 14;
+                                break;
+                            case "P":
+                                posicionmulti = 15;
+                                break;
+                            case "Q":
+                                posicionmulti = 16;
+                                break;
+                            case "R":
+                                posicionmulti = 17;
+                                break;
+                            case "S":
+                                posicionmulti = 18;
+                                break;
+                            case "T":
+                                posicionmulti = 19;
+                                break;
+                            case "U":
+                                posicionmulti = 20;
+                                break;
+                            case "V":
+                                posicionmulti = 21;
+                                break;
+                            case "W":
+                                posicionmulti = 22;
+                                break;
+                            case "X":
+                                posicionmulti = 23;
+                                break;
+                            case "Y":
+                                posicionmulti = 24;
+                                break;
+                            case "Z":
+                                posicionmulti = 25;
+                                break;
+
+                        }                      
+                               double [][] matrizv = vector[posicionmulti];
+                               
+                            /*for (int i = 0; i < matriz1.length; i++) {
+                                for (int j = 0; j < matriz1[0].length; j++) {
+                                    System.out.println(""+matriz1[i][j]);
                                 }
-
-                                //creacion del tercer termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        tercerTerR[i][j] = (m5[0][0] * m6[0][2]) + (m5[0][1] * m6[1][2]) + (m5[0][2] * m6[2][2]);
-                                    }
-                                }
-
-                                //creación del cuarto termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        cuartoTerR[i][j] = (m5[1][0] * m6[0][0]) + (m5[1][1] * m6[1][0]) + (m5[1][2] * m6[2][0]);
-                                    }
-                                }
-
-                                //creación del quinto termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        quintoTerR[i][j] = (m5[1][0] * m6[0][1]) + (m5[1][1] * m6[1][1]) + (m5[1][2] * m6[2][1]);
-                                    }
-                                }
-
-                                //creación del sexto termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        sextoTerR[i][j] = (m5[1][0] * m6[0][2]) + (m5[1][1] * m6[1][2]) + (m5[1][2] * m6[2][2]);
-                                    }
-                                }
-
-                                //creación del septimo termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        septTerR[i][j] = (m5[2][0] * m6[0][0]) + (m5[2][1] * m6[1][0]) + (m5[2][2] * m6[2][0]);
-                                    }
-                                }
-
-                                //creación del octavo termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        octaTerR[i][j] = (m5[2][0] * m6[0][1]) + (m5[2][1] * m6[1][1]) + (m5[2][2] * m6[2][1]);
-                                    }
-                                }
-
-                                //creación del noveno termino de la matriz resultante
-                                for (int i = 0; i < 1; i++) {
-                                    for (int j = 0; j < 1; j++) {
-                                        noveTerR[i][j] = (m5[2][0] * m6[0][2]) + (m5[2][1] * m6[1][2]) + (m5[2][2] * m6[2][2]);
-                                    }
-                                }
-
-                                //------------------------------------------------------
-                                //impresion de cada termino de la matriz resultante
-                                System.out.println("El primer termino de la matriz es: ");
-                                for (int i = 0; i < primerTerR.length; i++) {
-                                    for (int j = 0; j < primerTerR.length; j++) {
-                                        //System.out.print("[ "+ primerTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                System.out.println("El segundo termino de la matriz es: ");
-                                for (int i = 0; i < segundoTerR.length; i++) {
-                                    for (int j = 0; j < segundoTerR[0].length; j++) {
-                                        //System.out.print("[ "+ segundoTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                System.out.println("El tercer termino de la matriz es: ");
-                                for (int i = 0; i < tercerTerR.length; i++) {
-                                    for (int j = 0; j < tercerTerR[0].length; j++) {
-                                        //System.out.print("[ "+ tercerTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                System.out.println("El cuarto termino de la matriz es: ");
-                                for (int i = 0; i < cuartoTerR.length; i++) {
-                                    for (int j = 0; j < cuartoTerR[0].length; j++) {
-                                        //System.out.print("[ "+ cuartoTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                System.out.println("El quinto termino de la matriz es: ");
-                                for (int i = 0; i < quintoTerR.length; i++) {
-                                    for (int j = 0; j < quintoTerR[0].length; j++) {
-                                        //System.out.print("[ "+ quintoTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                System.out.println("El sexto termino de la matriz es: ");
-                                for (int i = 0; i < sextoTerR.length; i++) {
-                                    for (int j = 0; j < sextoTerR[0].length; j++) {
-                                        // System.out.print("[ "+ sextoTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                System.out.println("El septimo termino de la matriz es: ");
-                                for (int i = 0; i < septTerR.length; i++) {
-                                    for (int j = 0; j < septTerR[0].length; j++) {
-                                        //System.out.print("[ "+ septTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                System.out.println("El octavo termino de la matriz es: ");
-                                for (int i = 0; i < octaTerR.length; i++) {
-                                    for (int j = 0; j < octaTerR[0].length; j++) {
-                                        //System.out.print("[ "+ octaTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                System.out.println("El noveno termino de la matriz es: ");
-                                for (int i = 0; i < noveTerR.length; i++) {
-                                    for (int j = 0; j < noveTerR[0].length; j++) {
-                                        //System.out.print("[ "+ noveTerR[i][j] + " ]");
-                                    }
-                                    System.out.println(" ");
-                                }
-
-                                //impresion de la matriz resultante
-                                System.out.println("Matriz Resultante R: ");
-
-                                matResultantes[0][0] = primerTerR[0][0];
-                                matResultantes[0][1] = segundoTerR[0][0];
-                                matResultantes[0][2] = tercerTerR[0][0];
-                                matResultantes[1][0] = cuartoTerR[0][0];
-                                matResultantes[1][1] = quintoTerR[0][0];
-                                matResultantes[1][2] = sextoTerR[0][0];
-                                matResultantes[2][0] = septTerR[0][0];
-                                matResultantes[2][1] = octaTerR[0][0];
-                                matResultantes[2][2] = noveTerR[0][0];
-
-                                for (int x = 0; x < matResultantes.length; x++) {
-                                    System.out.print("[");
-                                    for (int y = 0; y < matResultantes[x].length; y++) {
-                                        System.out.print(matResultantes[x][y]);
-                                        if (y != matResultantes[x].length - 1) {
-                                            System.out.print("\t");
+                            }*/
+                            
+                            System.out.println("Ingrese Valor Numerico");
+                            double valor = teclado.nextDouble();
+                            
+                            
+                            double matrizresultadov[][]= new double[matrizv.length][matrizv[0].length];
+                            System.out.println("");
+                            
+                         for (int i=0; i < matrizresultadov.length; i++) {
+                        for (int j=0; j < matrizresultadov[i].length; j++) {
+                         matrizresultadov[i][j] = valor * matrizv[i][j];
                                         }
                                     }
-                                    System.out.println("]");
-                                }
+                            System.out.println("Resultado");
+                         for (int x=0; x < matrizresultadov.length; x++) {
+                             for (int y=0; y < matrizresultadov[x].length; y++) {
+                                     
+                                            System.out.print(" ["+matrizresultadov[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                          
+                        }}
+                        if (opciondem==2) {
+                            
+  
+                           
+                            
+                            
+                            
+                            System.out.println("Ingrese Matriz 1:");
+                        String nombrematriz1;
+                        nombrematriz1 = teclado.next();
+                        
+                        int posicionmulti2 = 0;
 
-                                //--------------------------------------------------------
+                        switch (nombrematriz1) {
+
+                            case "A":
+                                posicionmulti2 = 0;
+                                break;
+                            case "B":
+                                posicionmulti2 = 1;
+                                break;
+                            case "C":
+                                posicionmulti2 = 2;
+                                break;
+                            case "D":
+                                posicionmulti2 = 3;
+                                break;
+                            case "E":
+                                posicionmulti2 = 4;
+                                break;
+                            case "F":
+                                posicionmulti2 = 5;
+                                break;
+                            case "G":
+                                posicionmulti2 = 6;
+                                break;
+                            case "H":
+                                posicionmulti2 = 7;
+                                break;
+                            case "I":
+                                posicionmulti2 = 8;
+                                break;
+                            case "J":
+                                posicionmulti2 = 9;
+                                break;
+                            case "K":
+                                posicionmulti2 = 10;
+                                break;
+                            case "L":
+                                posicionmulti2 = 11;
+                                break;
+                            case "M":
+                                posicionmulti2 = 12;
+                                break;
+                            case "N":
+                                posicionmulti2 = 13;
+                                break;
+                            case "O":
+                                posicionmulti2 = 14;
+                                break;
+                            case "P":
+                                posicionmulti2 = 15;
+                                break;
+                            case "Q":
+                                posicionmulti2 = 16;
+                                break;
+                            case "R":
+                                posicionmulti2 = 17;
+                                break;
+                            case "S":
+                                posicionmulti2 = 18;
+                                break;
+                            case "T":
+                                posicionmulti2 = 19;
+                                break;
+                            case "U":
+                                posicionmulti2 = 20;
+                                break;
+                            case "V":
+                                posicionmulti2 = 21;
+                                break;
+                            case "W":
+                                posicionmulti2 = 22;
+                                break;
+                            case "X":
+                                posicionmulti2 = 23;
+                                break;
+                            case "Y":
+                                posicionmulti2 = 24;
+                                break;
+                            case "Z":
+                                posicionmulti2 = 25;
                                 break;
 
-                            }
+                        }                      
+                               double [][] matriz1 = vector[posicionmulti2];
+                           /* for (int x=0; x < matriz1.length; x++) {
+                             for (int y=0; y < matriz1[x].length; y++) {
+                                     
+                                            System.out.print(" ["+matriz1[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                                                                        }
+                           */
+                            
+                            
+                             System.out.println("Ingrese Matriz 2:");
+                        String nombrematriz2;
+                        nombrematriz2 = teclado.next();
+                        
+                        int posicionmulti3 = 0;
 
+                        switch (nombrematriz2) {
+
+                            case "A":
+                                posicionmulti3 = 0;
+                                break;
+                            case "B":
+                                posicionmulti3 = 1;
+                                break;
+                            case "C":
+                                posicionmulti3 = 2;
+                                break;
+                            case "D":
+                                posicionmulti3 = 3;
+                                break;
+                            case "E":
+                                posicionmulti3 = 4;
+                                break;
+                            case "F":
+                                posicionmulti3 = 5;
+                                break;
+                            case "G":
+                                posicionmulti3 = 6;
+                                break;
+                            case "H":
+                                posicionmulti3 = 7;
+                                break;
+                            case "I":
+                                posicionmulti3 = 8;
+                                break;
+                            case "J":
+                                posicionmulti3 = 9;
+                                break;
+                            case "K":
+                                posicionmulti3 = 10;
+                                break;
+                            case "L":
+                                posicionmulti3 = 11;
+                                break;
+                            case "M":
+                                posicionmulti3 = 12;
+                                break;
+                            case "N":
+                                posicionmulti3 = 13;
+                                break;
+                            case "O":
+                                posicionmulti3 = 14;
+                                break;
+                            case "P":
+                                posicionmulti3 = 15;
+                                break;
+                            case "Q":
+                                posicionmulti3 = 16;
+                                break;
+                            case "R":
+                                posicionmulti3 = 17;
+                                break;
+                            case "S":
+                                posicionmulti3 = 18;
+                                break;
+                            case "T":
+                                posicionmulti3 = 19;
+                                break;
+                            case "U":
+                                posicionmulti3 = 20;
+                                break;
+                            case "V":
+                                posicionmulti3 = 21;
+                                break;
+                            case "W":
+                                posicionmulti3 = 22;
+                                break;
+                            case "X":
+                                posicionmulti3 = 23;
+                                break;
+                            case "Y":
+                                posicionmulti3 = 24;
+                                break;
+                            case "Z":
+                                posicionmulti3 = 25;
+                                break;
+
+                        }                      
+                               double [][] matriz2 = vector[posicionmulti3];
+                               /*
+                               for (int x=0; x < matriz2.length; x++) {
+                             for (int y=0; y < matriz2[x].length; y++) {
+                                     
+                                            System.out.print(" ["+matriz2[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                                                                        }
+                               */
+                            /*for (int i = 0; i < matriz2.length; i++) {
+                                for (int j = 0; j < matriz2[0].length; j++) {
+                                    System.out.println(""+matriz2[i][j]);
+                                }
+                            }*/
+                            
+                            int matrizresultado[][]= new int[matriz1.length][matriz2[0].length];
+                            System.out.println("");
+                            
+                          if (matriz1[0].length == matriz2.length) {
+        for (int i = 0; i < matriz1.length; i++) {
+            for (int j = 0; j < matriz2[0].length; j++) {
+                for (int k = 0; k < matriz1[0].length; k++) {
+                    // aquí se multiplica la matriz
+                    matrizresultado[i][j] += matriz1[i][k] * matriz2[k][j];
+                }
+                
+            }
+            
+        }
+        for (int x=0; x < matrizresultado.length; x++) {
+                             for (int y=0; y < matrizresultado[x].length; y++) {
+                                     
+                                            System.out.print(" ["+matrizresultado[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                                                                        }
+        
+                          }
+                          if(matriz1[0].length != matriz2.length){System.out.println("Dimensiones no compatibles");}
+                          
                         }
-
+                            if (opciondem==3) {
+                                salirmulti = true;
+                            }
+                        
+                        
+                        
+                        
+                        
                         break;
-                    }
+                        }
 
                     case 4: {
 
