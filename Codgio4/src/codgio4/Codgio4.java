@@ -1621,33 +1621,155 @@ public class Codgio4 {
                         int numpot; //Opcion que debe elegir el usuario
                         numpot = elevarnumero.nextInt();
 
-                        int[][] m9 = new int[3][3];
-                        m9[0][0] = 1;
-                        m9[0][1] = 2;
-                        m9[0][2] = 3;
-                        m9[1][0] = 4;
-                        m9[1][1] = 5;
-                        m9[1][2] = 6;
-                        m9[2][0] = 7;
-                        m9[2][1] = 8;
-                        m9[2][2] = 9;
+                        System.out.println("Ingrese Matriz A Elevar:");
+                        String nombrematriz1;
+                        nombrematriz1 = teclado.next();
+                        
+                        int posicionpot = 0;
 
-                        int[][] maPotR = new int[m9.length][m9[0].length];
+                        switch (nombrematriz1) {
 
-                        for (int i = 0; i < m9.length; i++) {
-                            for (int j = 0; j < m9.length; j++) {
-                                maPotR[i][j] = numpot * m9[i][j];
-                            }
-                        }
+                            case "A":
+                                posicionpot = 0;
+                                break;
+                            case "B":
+                                posicionpot = 1;
+                                break;
+                            case "C":
+                                posicionpot = 2;
+                                break;
+                            case "D":
+                                posicionpot = 3;
+                                break;
+                            case "E":
+                                posicionpot = 4;
+                                break;
+                            case "F":
+                                posicionpot = 5;
+                                break;
+                            case "G":
+                                posicionpot = 6;
+                                break;
+                            case "H":
+                                posicionpot = 7;
+                                break;
+                            case "I":
+                                posicionpot = 8;
+                                break;
+                            case "J":
+                                posicionpot = 9;
+                                break;
+                            case "K":
+                                posicionpot = 10;
+                                break;
+                            case "L":
+                                posicionpot = 11;
+                                break;
+                            case "M":
+                                posicionpot = 12;
+                                break;
+                            case "N":
+                                posicionpot = 13;
+                                break;
+                            case "O":
+                                posicionpot = 14;
+                                break;
+                            case "P":
+                                posicionpot = 15;
+                                break;
+                            case "Q":
+                                posicionpot = 16;
+                                break;
+                            case "R":
+                                posicionpot = 17;
+                                break;
+                            case "S":
+                                posicionpot = 18;
+                                break;
+                            case "T":
+                                posicionpot = 19;
+                                break;
+                            case "U":
+                                posicionpot = 20;
+                                break;
+                            case "V":
+                                posicionpot = 21;
+                                break;
+                            case "W":
+                                posicionpot = 22;
+                                break;
+                            case "X":
+                                posicionpot = 23;
+                                break;
+                            case "Y":
+                                posicionpot = 24;
+                                break;
+                            case "Z":
+                                posicionpot = 25;
+                                break;
 
-                        System.out.println("La matriz resultante R es: ");
-                        for (int i = 0; i < maPotR.length; i++) {
-                            for (int j = 0; j < maPotR.length; j++) {
-                                System.out.print("[ " + maPotR[i][j] + " ]");
-                            }
-                            System.out.println(" ");
-                        }
-
+                        }                      
+                               double [][] matrizpoten = vector[posicionpot];
+                               /*for (int x=0; x < matrizpoten.length; x++) {
+                             for (int y=0; y < matrizpoten[x].length; y++) {
+                                     
+                                            System.out.print(" ["+matrizpoten[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                                                                        }*/
+                               
+                               int matrizpotenresul[][] = new int[matrizpoten.length][matrizpoten[0].length];
+                               
+                            
+                        
+                               for (int i = 0; i < matrizpoten.length; i++) {
+            for (int j = 0; j < matrizpoten[0].length; j++) {
+                for (int k = 0; k < matrizpoten[0].length; k++) {
+                    // aquí se multiplica la matriz
+                    matrizpotenresul[i][j] += matrizpoten[i][k] * matrizpoten[k][j];  
+                    }
+                     }
+                         } 
+                           /* for (int x=0; x < matrizpotenresul.length; x++) {
+                             for (int y=0; y < matrizpotenresul[x].length; y++) {
+                                     
+                                            System.out.print(" ["+matrizpotenresul[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                                                                        } */
+                           
+                    double [][] matrizpotendefi = new double[matrizpotenresul.length][matrizpotenresul[0].length];
+                    
+                        for (int m = 2; m < numpot; m++) {
+                            
+                    for (int p = 0; p < matrizpotenresul.length; p++) {
+            for (int o = 0; o < matrizpotenresul[0].length; o++) {
+                for (int ñ = 0; ñ < matrizpotenresul[0].length; ñ++) {
+                    // aquí se multiplica la matriz
+                    matrizpotendefi[p][o] += matrizpotenresul[p][ñ] * matrizpoten[ñ][o];   
+                }
+                     }
+                         } 
+                    
+                    for (int x=0; x < matrizpotenresul.length; x++) {
+                             for (int y=0; y < matrizpotenresul[x].length; y++) {
+                                     
+                                            matrizpotenresul[x][y] = (int) matrizpotendefi[x][y];
+                                                                            }
+                             System.out.print("");
+                                                                        }
+                    
+                    
+                    
+                        }   
+                        
+        for (int x=0; x < matrizpotendefi.length; x++) {
+                             for (int y=0; y < matrizpotendefi[x].length; y++) {
+                                     
+                                            System.out.print(" ["+matrizpotendefi[x][y]+ "] ");
+                                                                            }
+                             System.out.println("");
+                                                                        }
                         break;
                     }
 
